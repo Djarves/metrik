@@ -1,3 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 body {
     font-family: 'Manrope', 'extra-light', sans-serif;
 }
@@ -175,18 +181,18 @@ h3 {
 }
 .cont {
   width: 1150px;
-  margin-bottom: 150px;
+  
   padding: 80px 0;
 }
 .servic {
-  width: 1150px;
-  margin-bottom: 150px;
-  padding: 0px 0;
+  margin: 0px auto;
+  padding: 40px 0;
   background-color: #000000;
 }
 
 
 .servic__title {
+  margin: 0px 20px;
   color: white;
   font-size: 40px;
   margin-bottom: 60px;
@@ -194,16 +200,23 @@ h3 {
 
 
 .servic__list {
-  margin-bottom: 150px;
+  margin: 0px 80px;
+  width: 1400px;
+  height: 1750px;
+  
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  gap: 40px;
+  align-items: center;
+  
+  gap: 40px; 
 }
 
 
 .servic__item {
-  position: relative;
-  overflow: hidden;
+
+ width: 1150px;
+ color: white;
 }
 
 .servic__item img {
@@ -213,10 +226,8 @@ h3 {
 
 
 .servic__label {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+ 
+ 
 
   background: rgba(0, 0, 0, 0.8);
   color: white;
@@ -258,8 +269,22 @@ h3 {
 }
 
 
-.footer {
-  background-color: #f4f3f3;   /* чёрный фон */
-  padding: 0px 0px 0px 0px;          /* отступ сверху и снизу */
-  background: 1px solid #b10909; /* красная рамка */
+.example {
+  background-image: url('/resources/Rect.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+  background-position: center;
+  height: 717px;
 }
+
+.example__content {
+  position: absolute;
+  bottom: 60px;
+  left: 200px;
+  font-size: 30px;
+  color: #ffffff;
+  width: 443px;
+}
+
+
