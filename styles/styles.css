@@ -181,9 +181,9 @@ h3 {
 }
 .cont {
   width: 1150px;
-  
-  padding: 80px 0;
 }
+
+
 .servic {
   margin: 0px auto;
   padding: 40px 0;
@@ -195,7 +195,6 @@ h3 {
   margin: 0px 20px;
   color: white;
   font-size: 40px;
-  margin-bottom: 60px;
 }
 
 
@@ -214,7 +213,7 @@ h3 {
 
 
 .servic__item {
-
+ margin-bottom: 40px;
  width: 1150px;
  color: white;
 }
@@ -226,13 +225,8 @@ h3 {
 
 
 .servic__label {
- 
- 
-
   background: rgba(0, 0, 0, 0.8);
   color: white;
-
-  padding: 20px;
   font-size: 20px;
 }
 
@@ -276,6 +270,7 @@ h3 {
   position: relative; 
   background-position: center;
   height: 717px;
+  margin-bottom: 150px;
 }
 
 .example__content {
@@ -287,4 +282,60 @@ h3 {
   width: 443px;
 }
 
+.contacts {
+margin: 150px;  
+gap: 30px;
+}
 
+.contacts__title {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.contacts__info {
+   display: flex;             
+  flex-direction: column; 
+  gap: 30px;     
+  font-size: 60px;
+  margin-bottom: 150px;
+}
+
+.footer__logo {
+  margin-bottom: 15px;
+}
+
+.footer {
+  margin: 0 auto;
+  height: 229px;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.footer__menu {
+  
+  display: flex;
+  gap: 30px;
+}
+
+.footer__copyright {
+  position: absolute;
+  bottom: 10px;
+  font-size: 20px;
+  color: #625858;
+  letter-spacing: -0.03em;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+.footer__link__active {
+  text-decoration: underline;
+  color: #625858;
+}
