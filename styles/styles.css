@@ -264,7 +264,7 @@ h3 {
 
 
 .example {
-  background-image: url('/resources/Rect.jpg');
+  background-image: url('../resources/Rect.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; 
