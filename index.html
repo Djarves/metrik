@@ -1,171 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Метрика</title>
-    <link rel="stylesheet" href="styles/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
 
 </head>
 
 <body>
 
-    <div class="contener">
-     <header>
-     <div class="nav">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <img src="resources/log.jpg">
+                </div>
 
-    <a class="logo-link" href="/">
-      <img class="logo" src="resources/log.jpg" alt="Логотип">
-    </a>
-
-    <nav class="menu">
-      <a href="#servic" class="nav-link active">О НАС</a>
-      <a href="#projects" class="nav-link">ПРОЕКТЫ</a>
-      <a href="#cont" class="nav-link">УСЛУГИ</a>
-      <a href="#contacts" class="nav-link">КОНТАКТЫ</a>
-    </nav>
-
-     </div>
-  </header>
-
-        <div class="interior">
-            <h1>Современные и стильные интерьеры для комфортной жизни</h1> 
-            <img src="resources/interior.png" alt="Интерьер" class="interior-image">
-            <div class="info">
-                <p>Мы - команда квалифицированных дизайнеров и архитекторов, занимающихся разработкой и реализацией дизайн-проектов</p>
+                <nav class="header__nav">
+                    <a href="#about" class="header__link">О НАС</a>
+                    <a href="#projects" class="header__link">ПРОЕКТЫ</a>
+                    <a href="#services" class="header__link">УСЛУГИ</a>
+                    <a href="#contacts" class="header__link">КОНТАКТЫ</a>
+                </nav>
             </div>
         </div>
+    </header>
 
-        <div id="servic" class="services">
-            <h2>О НАС</h2>
-            <h3>Студия основана в 2011 году. Полностью отдаемся проектированию и реализации интерьеров. К нам обращаются за уютом, индивидуальными решениями и практичностью. Находим конструктивные решения для каждого интерьера, вплоть до каждой детали — нацелены на результат.</h3>
-            <a href="" class="services-link">Посмотреть услуги</a>
-            
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero__title">
+                Современные и стильные интерьеры
+                для комфортной жизни
+            </h1>
+
+            <div class="hero__image">
+                <img src="resources/interior.png" alt="Интерьер">
+                <p class="hero__text">
+                    Мы - команда квалифицированных дизайнеров и архитекторов, занимающихся разработкой и реализацией дизайн-проектов
+                </p>
+            </div>
         </div>
-      
-        <div id="projects" class="projects">
-            <h2 class="text">ПРОЕКТЫ</h2>
-            <div class="projects__item project">
-                
-               <img src="resources/interior.png" alt="Интерьер" class="interior-image"> 
-                <h1 class="project__title">
-                    ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023
-                </h1>
-                <a href="#" class="project__link">
-                    Подробнее
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="about__title">О НАС</h2>
+
+            <div class="about__content">
+                <p class="about__text">
+                    Студия основана в 2011 году. Полностью отдаемся проектированию и реализации интерьеров. К нам обращаются за уютом, индивидуальными решениями и практичностью. Находим конструктивные решения для каждого интерьера, вплоть до каждой детали — нацелены на результат.
+                </p>
+
+                <a href="#" class="about__button">
+                    Посмотреть услуги
                 </a>
             </div>
-            <div class="projects__item project">
-                <img src="resources/interior1.png" alt="Интерьер" class="interior-image"> 
-                <h1 class="project__title">
-                    ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023
-                </h1>
-                <a href="#" class="project__link">
-                    Подробнее
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="projects__title">ПРОЕКТЫ</h2>
+
+            <div class="projects__list">
+
+                <article class="projects__item">
+                    <img src="resources/project.png" alt="">
+                    <div class="projects__info">
+                        <h3 class="projects__name">
+                            ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023
+                        </h3>
+                        <a href="#" class="projects__link">
+                            Подробнее →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__item">
+                    <img src="resources/interior1.png" alt="">
+                    <div class="projects__info">
+                        <h3 class="projects__name">
+                            ЖК НОРВЕЖСКИЙ ПАРК — 75 м² — 2023
+                        </h3>
+                        <a href="#" class="projects__link">
+                            Подробнее →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__item">
+                    <img src="resources/interior2.png" alt="">
+                    <div class="projects__info">
+                        <h3 class="projects__name">
+                            ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022
+                        </h3>
+                        <a href="#" class="projects__link">
+                            Подробнее →
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="projects__more">
+                <a href="#" class="projects__button">
+                    Смотреть все проекты
                 </a>
             </div>
-            <div class="projects__item project">
-                <img src="resources/interior2.png" alt="Интерьер" class="interior-image"> 
-                <h1 class="project__title">
-                   ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022
-                </h1>
-                <a href="#" class="project__link">
-                    Подробнее
+        </div>
+    </section>
+
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="services__title">УСЛУГИ</h2>
+
+            <div class="services__list">
+
+                <div class="services__item">
+                    <img src="resources/Rec 2.jpg" alt="">
+                    <p class="services__text">
+                        Планировочное решение — от 2500 ₽/м²
+                    </p>
+                </div>
+
+                <div class="services__item">
+                    <img src="resources/Rec .jpg" alt="">
+                    <p class="services__text">
+                        Дизайн-проект — от 3000 ₽/м²
+                    </p>
+                </div>
+
+                <div class="services__item">
+                    <img src="resources/Rec1.jpg" alt="">
+                    <p class="services__text">
+                        Авторский надзор — от 30 000₽ в месяц
+                    </p>
+                </div>
+
+                <div class="services__item">
+                    <img src="resources/Rec3.jpg" alt="">
+                    <p class="services__text">
+                        Комплектация — 5% от стоимости спецификации
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Big Promo Block -->
+    <section class="promo">
+    <div class="promo__content">
+        <h2 class="promo__title">
+            Проект двухкомнатной квартиры
+            в ЖК Лесной Пейзаж
+        </h2>
+    </div>
+    </section>
+
+
+    <!-- Contacts -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="contacts__logo">
+                  <img src="resources/icon.svg" alt="Логотип">
+            </div>
+            <h2 class="contacts__title">КОНТАКТЫ</h2>
+
+            <div class="contacts__info">
+                <a href="tel:+79358954535" class="contacts__phone">
+                    +7 935 895-45-35
+                </a>
+
+                <a href="mailto:hello@mail.com" class="contacts__email">
+                    hello@mail.com
                 </a>
             </div>
-             <div class="wrapper">
-            <button class="lin">Смотреть все проекты</button>
-            </div> 
-    </div>
         </div>
-        
-  <div class="servic">
-     <div id="cont" class="cont">
-       <h2 class="servic__title">Услуги</h2>
-     </div>
-      <div class="servic__list">
+    </section>
 
-      <div class="servic__item">
-        <img src="resources/Rec.jpg" alt="">
-        <div class="servic__label">
-          Планировочное решение — от 2500₽/м²
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__nav">
+                <a href="#">О НАС</a>
+                <a href="#">ПРОЕКТЫ</a>
+                <a href="#">УСЛУГИ</a>
+                <a href="#">КОНТАКТЫ</a>
+            </nav>
+
+            <p class="footer__copy">
+                Студия дизайна © Метрика — 2023
+            </p>
         </div>
-      </div>
+    </footer>
 
-        <div class="servic__item">
-         <img src="resources/Rec 2.jpg" alt="">
-         <div class="servic__label">
-            Дизайн-проект — от 3000₽/м²
-        </div>
-        </div>
-
-        <div class="servic__item">
-        <img src="resources/Rec1.jpg" alt="">
-        <div class="servic__label">
-          Авторский надзор — от 30 000₽ в месяц
-        </div>
-      </div>
-
-      <div class="servic__item">
-        <img src="resources/Rec3.jpg" alt="">
-        <div class="servic__label">
-          Комплектация — 5% от стоимости спецификации
-        </div>
-      </div>
-
-      </div>
-    </div>
-  
-
-    
-
-   <div class="example">
-    <div class="example__content">
-      <h4 class="example__title">Проект  Двухкомнатной квартиры в ЖК Лесной Пейзаж</h4>
-    </div>
-  </div>         
-
- 
-
-<div id="contacts" class="contacts">
- <div class="footer__logo">
-      <img src="resources/icon.svg" alt="Логотип">
-    </div>
-  <div class="contact">
-    <h2 class="contacts__title">Контакты</h2>
-
-    <div class="contacts__info">
-      <a href="tel:+79358954535" class="contacts__phone">
-        +7 935 895-45-35
-      </a>
-
-      <a href="mailto:hello@mail.com" class="contacts__email">
-        hello@mail.com
-      </a>
-    </div>
-  </div>
-</div>  
-
-
-  <div class="footer">
-
-    <nav class="footer__nav">
-      <ul class="footer__menu">
-        <li><a href="#servic" class="footer__link__active">О НАС</a></li>
-        <li><a href="#projects" class="footer__link">ПРОЕКТЫ</a></li>
-        <li><a href="#cont" class="footer__link">УСЛУГИ</a></li>
-        <li><a href="#contacts" class="footer__link">КОНТАКТЫ</a></li>
-      </ul>
-    </nav>
-
-    <p class="footer__copyright">
-      Студия дизайна интерьера Метрика — 2023
-    </p>
-
-  </div>
-    
 </body>
 </html>
