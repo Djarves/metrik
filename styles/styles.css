@@ -56,6 +56,12 @@ img {
     font-size: 14px;
 }
 
+.header__link__active {
+    text-decoration: underline;
+    color: #6d6666;
+    font-size: 14px;
+}
+
 .header__link:hover {
     color: #c40000;
 }
@@ -82,15 +88,16 @@ img {
 .hero__text {
     position: absolute;
     font-size: 20px;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.03em;
     bottom: 20px;
     left: 20px;
     color: white;
-    max-width: 400px;
+    max-width: 430px;
 }
 
 
 .about {
+   
     padding: 80px 0;
 }
 
@@ -101,7 +108,7 @@ img {
 }
 
 .about__text {
-    max-width: 1048px;
+    width: 1048px;
     font-weight: 400;
     font-size: 45px;
     letter-spacing: -0.03em;
@@ -118,7 +125,7 @@ img {
     line-height: 67px;
     color: #ffffff;
     background: #b10909;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .about__button:hover {
@@ -128,6 +135,12 @@ img {
 
 .projects {
     padding: 80px 0;
+}
+
+.projects__title {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 400;
 }
 
 .projects__item {
@@ -147,12 +160,17 @@ img {
 
 
 .projects__button {
-    display: inline-block;
+    width: 1150px;
+    height: 153px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 30px;
     padding: 15px 40px;
     border: 1px solid #c40000;
     color: #c40000;
     text-decoration: none;
+    margin-bottom: 150px;
 }
 
 
@@ -168,6 +186,10 @@ img {
 
 .services__text {
     margin-top: 10px;
+}
+
+.services__title {
+    margin-bottom: 30px;
 }
 
 
@@ -197,8 +219,11 @@ img {
 }
 
 .promo__title {
+    width: 443px;
+    margin-left: 190px;
     font-size: 30px;
     letter-spacing: -0.03em;
+    margin-bottom: 60px;
 }
 
 
@@ -241,4 +266,10 @@ img {
     color: white;
     margin: 0 15px;
     text-decoration: none;
+}
+
+.footer__nav a.active {
+    text-decoration: underline;
+    color: #6d6666;
+    
 }
