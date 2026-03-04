@@ -273,3 +273,58 @@ img {
     color: #6d6666;
     
 }
+
+
+@media (max-width: 767px) {
+    .hero {
+        padding: 17px 15px;
+    }
+
+    .hero__title {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .hero__text {
+        font-size: 14px;
+        max-width: 250px;
+        bottom: 10px;
+        left: 10px;
+  }
+
+    .about {
+        padding: 40px 15px;
+    }
+
+    .about__text {
+        font-size: 22px;
+        line-height: 1.3;
+  }
+
+  .about__button {
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+  }
+
+  .projects {
+    padding: 17px 15px;
+}  
+
+  .projects__item {
+    margin-bottom: 30px;
+  }
+
+  .projects__name {
+    font-size: 14px;
+  }
+
+  .projects__button {
+    width: 100%;
+    text-align: center;
+  }
+ img {
+    max-width: 100%;
+    height: auto;
+ }
+}
