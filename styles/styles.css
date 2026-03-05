@@ -85,6 +85,11 @@ img {
     position: relative;
 }
 
+.hero__image img {
+    width: 100%;
+    height: auto;
+}
+
 .hero__text {
     position: absolute;
     font-size: 20px;
@@ -228,7 +233,7 @@ img {
 
 
 .contacts {
-    padding: 80px 0;
+    padding: 80px 0; 
 }
 
 .contacts__logo {
@@ -275,22 +280,58 @@ img {
 }
 
 
+
+
+@media (max-width: 1199px) {
+  .hero__title {
+    font-size: 50px;
+    max-width: 100%;
+}
+
+  .hero__text {
+        width: 340px;
+        font-size: 20px;
+        letter-spacing: -0.03em;
+    }
+
+     .about__text {
+        font-size: 30px;
+        max-width: 700px;
+    }
+
+    .projects__item {
+        margin-bottom: 60px;
+    }
+}
+
 @media (max-width: 767px) {
    .hero {
     padding: 13px 12px;
    }
 
+
     .hero__title {
-        font-size: 30px;
-        line-height: 105%;
+        width: 348px;
+        font-size: 16px;
         letter-spacing: -0.03em;
     }
 
     .hero__text {
+        max-width: 320px;
         font-size: 16px;
         bottom: 15px;
         left: 15px;
   }
+
+  .hero__image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__image {
+  height: 304px;
+  overflow: hidden; 
+}
 
    .about {
        padding: 12px 17px; 
@@ -298,15 +339,18 @@ img {
 
     .about__title {
         font-size: 14px;
+        letter-spacing: -0.03em;
+        margin-bottom: 10px;
     }
 
     .about__text {
+        width: 350px;
         font-size: 22px;
         letter-spacing: -0.03em;
   }
 
   .about__button {
-    width: 100%;
+    width: 60%;
     height: 55px;
     line-height: 55px;
   }
@@ -324,32 +368,12 @@ img {
   }
 
   .projects__button {
-    width: 100%;
+    width: 60%;
     text-align: center;
+    height: 100px;
   }
  img {
     max-width: 350px;
     height: auto;
  }
-}
-
-@media (max-width: 1199px) {
-  .hero__title {
-    font-size: 50px;
-    max-width: 100%;
-}
-
-  .hero__text {
-        font-size: 20px;
-        letter-spacing: -0.03em;
-    }
-
-     .about__text {
-        font-size: 30px;
-        max-width: 700px;
-    }
-
-    .projects__item {
-        margin-bottom: 60px;
-    }
 }
