@@ -19,7 +19,7 @@
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__logo">
-                    <img src="resources/log.jpg">
+                    <img class="logo" src="resources/log.jpg">
                 </div>
 
                 <nav class="header__nav">
@@ -220,33 +220,70 @@
 
 
 
-    <!-- Big Promo Block -->
-    <section class="promo">
-    <div class="promo__content">
-        <h2 class="promo__title">
-            Проект двухкомнатной квартиры
-            в ЖК Лесной Пейзаж
-        </h2>
-    </div>
-    </section>
+<section class="gallery-section">
+        <div class="gallery__slides">
+            <div class="slide gallery__slide_active">
+                <img class="gallery__image" src="resources/Rect.jpg" alt="">
+                <p class="gallery__label">ГАЛЕРЕЯ ПРОЕКТОВ</p>
+                 <h2 class="gallery__title">
+                 Проект двухкомнатной квартиры
+                 ЖК Лесной Пейзаж
+                 </h2>
+            </div>
+
+            <div class="slide">
+                <img class="gallery__image" src="resources/gal.jpg" alt="">
+                <p class="gallery__label">ГАЛЕРЕЯ ПРОЕКТОВ</p>
+                 <h2 class="gallery__title">
+                 Проект гостиной в ЖК Маяк
+                 </h2>
+            </div>
+
+            <div class="slide">
+                <img class="gallery__image" src="resources/Rectan.jpg" alt="">
+                <p class="gallery__label">ГАЛЕРЕЯ ПРОЕКТОВ</p>
+                 <h2 class="gallery__title">
+                 Визуализация кухни-гостиной в частном доме
+                 </h2>
+            </div>
+
+            <div class="slide">
+                <img class="gallery__image" src="resources/Recta.jpg" alt="">
+                <p class="gallery__label">ГАЛЕРЕЯ ПРОЕКТОВ</p>
+                 <h2 class="gallery__title">
+                 Проект кухни в скандинавском стиле для ЖК Северный Ветер
+                 </h2>
+            </div>
+            <div class="gallery__controls">
+                    <svg id="gallery-prev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M29.6167 6.28325L26.6667 3.33325L10 19.9999L26.6667 36.6666L29.6167 33.7166L15.9 19.9999L29.6167 6.28325Z" fill="white" />
+                    </svg>
+                    <svg id="gallery-next" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.3833 6.28325L13.3333 3.33325L30 19.9999L13.3333 36.6666L10.3833 33.7166L24.1 19.9999L10.3833 6.28325Z" fill="white" />
+                    </svg>
+            </div>
+        </div>
+</section>
+
 
 
     <!-- Contacts -->
     <section class="contacts" id="contacts">
         <div class="container">
-            <div class="contacts__logo">
-                  <img src="resources/icon.svg" alt="Логотип">
-            </div>
             <h2 class="contacts__title">КОНТАКТЫ</h2>
-
-            <div class="contacts__info">
-                <a href="tel:+79358954535" class="contacts__phone">
+            <div class="contacts__box">
+                <div class="contacts__info">
+                  <img class="contacts__logo" src="resources/icon.svg" alt="Логотип">
+                  <a href="tel:+79358954535" class="contacts__phone">
                     +7 935 895-45-35
-                </a>
-
-                <a href="mailto:hello@mail.com" class="contacts__email">
+                  </a>
+                </div>
+                <div class="contacts__info">
+                  <img class="contacts__logo" src="resources/Vector.svg" alt="Логотип">
+                   <a href="mailto:hello@mail.com" class="contacts__email">
                     hello@mail.com
-                </a>
+                   </a>
+                </div>
             </div>
         </div>
     </section>
@@ -263,10 +300,10 @@
             </nav>
 
             <p class="footer__copy">
-                Студия дизайна © Метрика — 2023
+                Студия дизайна интерьера Метрика — 2023
             </p>
         </div>
     </footer>
-
+<script src="gallery.js"></script>
 </body>
 </html>

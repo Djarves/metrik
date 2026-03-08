@@ -235,43 +235,100 @@ img {
 }
 
 
-.promo {
-    height: 500px;
-    background-image: url("../resources/Rect.jpg"); /* картинка */
-    background-size: cover;      /* заполняет весь блок */
-    background-position: center; /* центрирование */
-    background-repeat: no-repeat;
+.gallery__title {
+    font-size: 24px;
+}
+
+.gallery__slide {
+    height: 717px;
     position: relative;
 }
 
-
-.promo__content {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: white;
+.gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* затемнение поверх картинки */
-.promo::before {
+.gallery__label {
+    position: absolute;
+    top: 60px;
+    left: 205px;
+    color: white;
+    font-size: 16px;
+}
+
+
+.gallery__title {
+    position: absolute;
+    bottom: 80px;
+    left: 205px;
+    font-size: 24px;
+    color: white;
+    max-width: 450px;
+}
+
+.gallery__slides {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 717px;
+    overflow: hidden;
+}
+
+
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;           /* по умолчанию слайд скрыт */
+    transition: opacity 0.5s ease;
+}
+
+.gallery__slide_active {
+  opacity: 1;  
+}
+
+.gallery-section {
+    overflow: hidden;
+}
+
+
+.gallery__slide::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.4); /* затемнение */
+    background: rgba(0,0,0,0.35);
 }
 
-.promo__title {
-    width: 443px;
-    margin-left: 190px;
-    font-size: 30px;
-    letter-spacing: -0.03em;
-    margin-bottom: 60px;
+
+.gallery__controls {
+    position: absolute;
+    left: 195px;
+    bottom: 160px;
 }
 
 
 .contacts {
     padding: 80px 0; 
 }
+
+.contacts__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contacts__info {
+    width: calc(50% - 30px);
+    position: relative;
+    margin-bottom: 45px;  
+}
+
 
 .contacts__logo {
     width: 24px;
@@ -281,15 +338,20 @@ img {
 
 .contacts__phone {
     display: block;
-    font-size: 24px;
+    font-size: 60px;
     margin-bottom: 10px;
     text-decoration: none;
     color: #111;
 }
 
+.contacts__title {
+    margin-bottom: 30px;
+}
+
 .contacts__email {
     text-decoration: none;
     color: gray;
+    font-size: 60px;
 }
 
 
@@ -301,19 +363,23 @@ img {
 }
 
 .footer__nav {
-    margin-bottom: 20px;
+    margin-bottom: 87px;
+}
+
+.footer__copy {
+    color: #6d6666;
 }
 
 .footer__nav a {
     color: white;
-    margin: 0 15px;
+    margin: 0 27px;
     text-decoration: none;
 }
 
 .footer__nav a.active {
     text-decoration: underline;
     color: #6d6666;
-    
+    font-size: 18px;
 }
 
 
@@ -377,6 +443,44 @@ img {
 
 
 @media (max-width: 767px) {
+    .header {
+    padding: 25px 0;
+    background: #f4f4f4;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+   width: 96px;
+   height: 16px;
+   
+}
+
+.header__nav {
+    display: flex;
+    gap: 10px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #111;
+    font-size: 12px;
+}
+
+.header__link__active {
+    text-decoration: underline;
+    color: #6d6666;
+    font-size: 12px;
+}
+
+
+
+
+
    .hero {
     padding: 13px 12px;
    }
@@ -440,7 +544,7 @@ img {
   }
 
   .projects__button {
-    width: 60%;
+    width: 100%;
     text-align: center;
     height: 100px;
   }
@@ -465,7 +569,7 @@ img {
 }
 .services__item img {
     object-fit: cover;
-    display: block;
+    display: block;    
     width: 100%;
     height: 100%;
 }
@@ -485,5 +589,91 @@ img {
 
 .review_text {
     font-size: 16px;
+}
+
+.gallery__image {
+    margin: 0 auto;
+    object-fit: contain;
+    display: block;    
+    width: 100vw;
+    height: 100vh;
+}
+
+.gallery__controls {
+    position: absolute;
+    top: 50%; 
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 30px; /* отступ от краев */
+}
+
+.gallery__label {
+    font-size: 14px;
+    top: 140px;
+    left: 30px;
+}
+
+.gallery__title {
+    font-size: 19px;
+    bottom: 58%;
+    left: 30px;
+}
+
+.gallery__slides {
+    height: 320px;
+   
+}
+
+.contacts__info {
+    width: 100%;
+}
+
+.contacts__logo {
+    width: 24px;
+    height: 20px;
+    margin-bottom: 15px;
+}
+
+.contacts__phone {
+    font-size: 35px;
+}
+
+.contacts__title {
+    margin-bottom: 15px;
+}
+
+.contacts__email {
+    font-size: 35px;
+}
+
+.footer {
+    background: #111;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer__nav {
+    margin-bottom: 87px;
+}
+
+.footer__copy {
+    color: #6d6666;
+}
+
+.footer__nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer__nav a.active {
+    text-decoration: underline;
+    color: #6d6666;
+    font-size: 12px;
 }
 }
