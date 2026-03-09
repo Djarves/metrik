@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/input.css">
 
 </head>
 
@@ -170,16 +171,43 @@
                     </p>
                 </div>
             </div>
-             <button class="js-btn">Открой popup</button>
+            <div class="js-popup popup">
                 
-              <div class="js-popup popup">
                 <div class="js-popup__content popup__content">
-                    <p class="popup__title">Это popup</p>
-                    <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae corrupti ratione adipisci, recusandae dolores ipsam commodi, neque deleniti eaque qui, facilis praesentium autem ducimus! Recusandae molestias ab unde odit ipsum.</p>  
-                    <div class="js-popup__close-btn popup__close-btn"></div>
-                </div>
-              </div>
+                    <h1 class="heading">
+                        Заказать услугу
+                    </h1>
+                    <p class="paragraph">
+                        Заполните форму, мы свяжемся с вами в течение суток
+                    </p>
+                    <div class=" popup__close-btn js-popup__close-btn">
+                        <img src="../resources/x.svg" alt="close">  
+                    </div>
+                      <input 
+                        class="input"
+                        type="text"
+                        placeholder="Имя">
 
+                           <input 
+                        class="input"
+                        type="text"
+                        placeholder="Электронная почта">
+                        
+                           <input 
+                        class="input"
+                        type="text"
+                        placeholder="Номер телефона">
+
+                      <button href="#" class="js-btnn">
+                           Отправить
+                      </button> 
+                </div>
+                 
+                
+            </div>
+                <button href="#" class="js-btn">
+                    Заказать услугу
+                </button>
         </div>
     </section>
 
