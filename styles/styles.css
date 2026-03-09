@@ -748,12 +748,12 @@ img {
     object-fit: contain;
     display: block;    
     width: 100vw;
-    height: 100vh;
+    height: auto;
 }
 
 .gallery__controls {
     position: absolute;
-    top: 50%; 
+    top: 30%; 
     left: 0;
     width: 100%;
     display: flex;
@@ -764,13 +764,13 @@ img {
 
 .gallery__label {
     font-size: 14px;
-    top: 140px;
-    left: 30px;
+    top: 10px;
+    left: 40px;
 }
 
 .gallery__title {
     font-size: 19px;
-    bottom: 58%;
+    bottom: 50%;
     left: 30px;
 }
 
@@ -834,8 +834,11 @@ img {
 }
 
 .popup__content {
-    padding: 10px;
-   
+        width: 90vw;        /* ширина 90% от экрана */
+        max-height: 90vh;   /* максимум 90% от высоты экрана */
+        overflow-y: auto;   /* прокрутка будет только если контент больше */
+        padding: 15px; 
+
 }
 
 .paragraph {
